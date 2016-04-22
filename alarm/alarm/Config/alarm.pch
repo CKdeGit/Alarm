@@ -1,0 +1,27 @@
+//
+//  alarm.pch
+//  alarm
+//
+//  Created by 陈凯 on 16/4/22.
+//  Copyright © 2016年 陈凯. All rights reserved.
+//
+
+/**
+ *  全局pch文件
+ */
+#ifndef alarm_pch
+#define alarm_pch
+
+//工具类库
+#import "Tools.h"
+//网络请求
+#import "SCHttpOperation.h"
+#import "SCHttpOperationMgr.h"
+//视图模型
+#import "ViewModel.h"
+
+//屏幕宽高
+#define screenWidth [UIScreen MainScreen].bounds.size.width
+#define screenHeight [UIScreen MainScreen].bounds.size.height
+
+#endif /* alarm_pch */

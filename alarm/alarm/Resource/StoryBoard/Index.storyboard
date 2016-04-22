@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="8pB-mi-VkL">
+            <objects>
+                <navigationController storyboardIdentifier="indexnav" id="l3H-7H-Mxv" customClass="AANavigationController" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="17C-ML-ed1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYY-7U-ndY" kind="relationship" relationship="rootViewController" id="xqm-Z7-QoZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Zx-Wn-Eb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-562" y="183"/>
+        </scene>
+        <!--Index View Controller-->
+        <scene sceneID="10v-UF-vVM">
+            <objects>
+                <viewController storyboardIdentifier="index" id="BYY-7U-ndY" customClass="AAIndexViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PqF-6l-tZq"/>
+                        <viewControllerLayoutGuide type="bottom" id="nWZ-g3-GKr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kaW-Pu-e9G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cNo-yR-bpT"/>
+                    <connections>
+                        <segue destination="TbA-LJ-q2P" kind="push" identifier="tomyvoice" id="lGu-O4-efh"/>
+                        <segue destination="2Rt-hL-IEj" kind="push" identifier="toaddnewalarm" id="lcu-Ez-wbo"/>
+                        <segue destination="fgd-SN-nck" kind="push" identifier="toeditalarm" id="RrN-Va-g5Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="su3-3P-Fcy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-44.5" y="182.5"/>
+        </scene>
+        <!--My Voice View Controller-->
+        <scene sceneID="BjM-jS-yIT">
+            <objects>
+                <viewController storyboardIdentifier="myvoice" id="TbA-LJ-q2P" customClass="AAMyVoiceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sCh-jz-5fp"/>
+                        <viewControllerLayoutGuide type="bottom" id="41h-yP-BnJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="903-9O-LfY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pOK-ao-ICe"/>
+                    <connections>
+                        <segue destination="eTo-Eg-NWm" kind="push" identifier="toaddnewvoice" id="S41-JV-2u1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sDG-ft-Dds" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="429.5" y="-110.5"/>
+        </scene>
+        <!--Add New Voice View Controller-->
+        <scene sceneID="3MS-Bh-WTu">
+            <objects>
+                <viewController storyboardIdentifier="newvoice" id="eTo-Eg-NWm" customClass="AAAddNewVoiceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="waH-R1-GGC"/>
+                        <viewControllerLayoutGuide type="bottom" id="F1o-xa-8IE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c53-N2-UDN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7Hj-IL-95e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bts-Q1-2NM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950.5" y="-110.5"/>
+        </scene>
+        <!--Add New Alarm View Controller-->
+        <scene sceneID="Z9a-Ql-DuM">
+            <objects>
+                <viewController storyboardIdentifier="newalarm" id="2Rt-hL-IEj" customClass="AAAddNewAlarmViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="28O-v0-yFY"/>
+                        <viewControllerLayoutGuide type="bottom" id="zup-xx-lbg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eU8-s1-Vhr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9WD-zm-vgH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Yv-Wd-BCY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="429.5" y="619.5"/>
+        </scene>
+        <!--Edit Alarm View Controller-->
+        <scene sceneID="FwC-L6-5IB">
+            <objects>
+                <viewController storyboardIdentifier="editalarm" id="fgd-SN-nck" customClass="AAEditAlarmViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PDP-Hm-fmT"/>
+                        <viewControllerLayoutGuide type="bottom" id="gMm-wB-SaT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6sC-b8-TFp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="a6R-d9-Fcg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x6j-e9-q2h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-44.5" y="1002.5"/>
+        </scene>
+    </scenes>
+</document>
